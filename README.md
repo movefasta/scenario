@@ -1,19 +1,8 @@
-# ScenarIO
+<p align="center">
+<h1 align="center">ScenarIO</h1>
+</p>
 
 [![C++ standard](https://img.shields.io/badge/standard-C++17-blue.svg?style=flat&logo=c%2B%2B)](https://isocpp.org)
-[![Size](https://img.shields.io/github/languages/code-size/robotology/gym-ignition.svg)][scenario]
-[![Lines](https://img.shields.io/tokei/lines/github/robotology/gym-ignition)][gym-ignition]
-[![Python CI/CD](https://github.com/robotology/gym-ignition/workflows/CI/CD/badge.svg)](https://github.com/robotology/gym-ignition/actions)
-
-[![Version](https://img.shields.io/pypi/v/scenario.svg)][pypi]
-[![Python versions](https://img.shields.io/pypi/pyversions/scenario.svg)][pypi]
-[![Status](https://img.shields.io/pypi/status/scenario.svg)][pypi]
-[![Format](https://img.shields.io/pypi/format/scenario.svg)][pypi]
-[![License](https://img.shields.io/pypi/l/scenario.svg)][pypi]
-
-[pypi]: https://pypi.org/project/scenario/
-[gym-ignition]: https://github.com/robotology/gym-ignition
-[scenario]: https://github.com/robotology/gym-ignition/tree/master/scenario
 
 **SCEN**e interf**A**ces for **R**obot **I**nput / **O**utput.
 
@@ -30,7 +19,7 @@
 **ScenarIO** is a C++ abstraction layer to interact with simulated and real robots.
 
 It mainly provides the following 
-[C++ interfaces](https://github.com/robotology/gym-ignition/tree/master/scenario/core/include/scenario/core):
+[C++ interfaces](src/core/include/scenario/core):
 
 - `scenario::core::World`
 - `scenario::core::Model`
@@ -65,8 +54,7 @@ Then, install the supported Ignition suite following the
 [official instructions](https://ignitionrobotics.org/docs/fortress).
 
 ### Python
-
-Execute, preferably in a [virtual environment](https://docs.python.org/3.8/tutorial/venv.html):
+Execute, preferably in a [virtual environment](https://docs.python.org/3.10/tutorial/venv.html):
 
 ```bash
 pip install scenario
@@ -77,8 +65,10 @@ pip install scenario
 You can either clone and install the standalone project:
 
 ```cmake
-git clone https://github.com/robotology/gym-ignition
-cd gym-ignition/scenario
+git clone https://seed.solid-sinusoid.duckdns.org/z3RBwHLb4j66Q12dwkK1RGQj3ufhi.git scenario
+# or using radicle-cli
+rad clone rad:z3RBwHLb4j66Q12dwkK1RGQj3ufhi
+cd scenario
 cmake -S . -B build/
 cmake --build build/ --target install
 ```
@@ -93,20 +83,12 @@ You can find some examples that show the usage of ScenarIO in the _Getting Start
 
 ## Contributing
 
-Please visit the _Limitations_ section of the [website][website] and check the 
-[`good first issue`](https://github.com/robotology/gym-ignition/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)
-and
-[`help wanted`](https://github.com/robotology/gym-ignition/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
+Please visit the _Limitations_ section of the [website][website] and 
 issues.
-
-You can visit our community forum hosted in [GitHub Discussions](https://github.com/robotology/gym-ignition/discussions).
-Even without coding skills, replying user's questions is a great way of contributing.
-If you use ScenarIO in your application and want to show it off, visit the 
-[Show and tell](https://github.com/robotology/gym-ignition/discussions/categories/show-and-tell) section!
 
 Pull requests are welcome.
 
-For major changes, please open a [discussion](https://github.com/robotology/gym-ignition/discussions)
+For major changes, please open a issue
 first to propose what you would like to change.
 
 ## Citation
